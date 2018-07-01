@@ -1,0 +1,7 @@
+{
+    "modules":
+	{
+        "questionnaire":    {"table_id":"20009290","url":"modules/questionnaire.html"},
+        "thanks":           {                      "url":"modules/thanks.html"}
+	}
+}
