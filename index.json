@@ -2,6 +2,8 @@
     "modules":
 	{
         "questionnaire":    {"table_id":"20009290","url":"modules/questionnaire.html"},
+        "questionnaire_port":    {"table_id":"20009290","url":"modules/questionnaire_port.html"},
+        "questionnaire_spa":    {"table_id":"20009290","url":"modules/questionnaire_spa.html"},
         "thanks":           {                      "url":"modules/thanks.html"}
 	}
 }
