@@ -1,7 +1,7 @@
 <section class="w3s ">
     <form id=F__ID class="w3-padding-0 w3-margin-0">
       <div id=intro__ID>
-        <div class="w3-container w3-center">
+        <div class="w3-container w3-center w3-content-2">
             <h4 class="" style='color:red'>INCOSACT </h4>
             <h6 class="">(<a style='color:red'>In</a>ternational <a style='color:red'>Co</a>llaboration of <a style='color:red'>S</a>leep <a style='color:red'>A</a>pnea <a style='color:red'>C</a>ardiovascular <a style='color:red'>T</a>rialists)<br>
                 “Comprendiendo el cuestionario de la Fibrilación Auricular (FA) y del Síndrome de Apnea Obstructiva del Sueño (AOS)”
@@ -41,7 +41,7 @@
             Sección 1: Estas 8 preguntas recogen información sobre su área de especialización y los datos de sus pacientes con FA incluyendo datos demográficos, factores de riesgo de FA, comorbilidad de FA y prevalencia de tipos de FA.
         </div>
         <div class="w3-container w3-content-2 w3-row w3-padding-12 " style="background-color:#A7B3A5 ">
-                1- ¿En qué área de la disciplina de cardiología principalmente ejerce? (Marque sólo una opción)
+                1- ¿En qué área de la disciplina de cardiología principalmente ejerce? (Marque sólo una opción)<br>
                 <input class="w3-radio" type="radio" name="cardiology_discipline__ID" id=cardiology_discipline_1__ID value="General Cardiology" \>
                 <label  for=cardiology_discipline_1__ID>Cardiología general</label>
                 <br><input  class="w3-radio"  type="radio" name="cardiology_discipline__ID" id=cardiology_discipline_2__ID value="Electrophysiology/Arrhythmia" \>
@@ -242,7 +242,7 @@
                         <option value='' >...</option><option value='0' >0%</option><option value='10' >10%</option><option value='20' >20%</option><option value='30' >30%</option><option value='40' >40%</option><option value='50' >50%</option><option value='60' >60%</option><option value='70' >70%</option><option value='80' >80%</option><option value='90'>90%</option><option value='100' >100%</option>                </select>
                 </div>
                 <div class="w3-threequarter w3-padding-12" >
-                    Un estudio limitado
+                    Un estudio <b>limitado</b>
                     <br><i>Este es un estudio nocturno de sueño sin medidas de EEG para estadificar el sueño</i>
                 </div>
                 <div class="w3-quarter w3-padding-12">
@@ -294,14 +294,14 @@
             <div id=q9 class="w3-container w3-content-2 w3-row w3-padding-12 " style="background-color:#EAE3EA ">
                     <br>9- In your patients diagnosed with OSA that are recommended for CPAP treatment, what proportion start CPAP<br>
                     <div class="w3-threequarter w3-padding-12" >
-                        <b>Prior to any AFib treatment</b> (Anti-Arrhythmic drugs, Cardioversion, Ablation)
+                        Antes de algún tratamiento para FA (Fármacos antiarrítmicos, Cardioversión, Ablación)
                     </div>
                     <div class="w3-quarter">
                         <select class="w3-padding-tiny" style='width:80px;vertical-align:middle;' name="prior_sleep_referral__ID" id=prior_sleep_referral__ID>
                             <option value='' >...</option><option value='0' >0%</option><option value='10' >10%</option><option value='20' >20%</option><option value='30' >30%</option><option value='40' >40%</option><option value='50' >50%</option><option value='60' >60%</option><option value='70' >70%</option><option value='80' >80%</option><option value='90'>90%</option><option value='100' >100%</option>                </select>
                     </div>
                     <div class="w3-threequarter w3-padding-12" >
-                        <b>After Ablation treatment</b>
+                        Después de tratamiento de ablación
                     </div>
                     <div class="w3-quarter">
                         <select class="w3-padding-tiny" style='width:80px;vertical-align:middle;' name="after_sleep_referral__ID" id=after_sleep_referral__ID>
@@ -317,7 +317,7 @@
             </div>
             <br>
             <div class="w3-container w3-content-2 w3-row w3-padding-12 " style="background-color:#A7B3A5 ">
-                <br>10-	<b>Evaluación de la necesidad de continuar investigando:</b><br>
+                <br>10-	Evaluación de la necesidad de continuar investigando:<br>
                 Por favor, evalúe la importancia global que usted percibe sobre la necesidad de más investigación clínica para establecer el beneficio del tratamiento de la AOS moderada-grave con CPAP para:
                 <br><br>
                 <table class="w3-centered w3-table-all w3-hoverable  w3-margin-bottom">
@@ -453,16 +453,15 @@
                 <table class="w3-centered w3-table-all w3-hoverable  w3-margin-bottom">
                   <tr class="w3-border">
                     <td  class="w3-left-align">Resultado</td>
-                    <td>Tratamiento de FA sólo es preferible<b>AFib treatment<br>alone</b> is<br>preferable<br>
-                    <span class="w3-small"> 5=very certain, 1=not very certain</span></td>
-                  </td>
-                    <td>Undecided</td>
-                    <td><b>CPAP + AFib<br>treatment</b> is<br>preferable<br>
-                    <span class="w3-small"> 5=very certain, 1=not very certain</span></td>
-                    <td>RCT Participation<br>Yes&nbsp;&nbsp;&nbsp;&nbsp;No</td>
+                    <td>Tratamiento<br>de <b>FA sólo</b><br>es preferible<br>
+                    <span class="w3-small"> 5=muy cierta, 1=no es muy seguro</span></td>
+                    <td>Indeciso</td>
+                    <td>Tratamiento<br><b>CPAP + FA</b><br>es preferible<br>
+                    <span class="w3-small"> 5=muy cierta, 1=no es muy seguro</span></td>
+                    <td style="font-size:0.8em">Participación en EAC<br>Yes&nbsp;&nbsp;&nbsp;&nbsp;No</td>
                   </tr>
                   <tr>
-                    <td  class="w3-left-align">Stroke</td>
+                    <td  class="w3-left-align">Accidente cerebrovascular</td>
                     <td>
                           <input type="radio" class="modified_radio__ID" id="afib_tx_stroke__ID" name="afib_tx_stroke__ID"  value=5 \><label class=modified_number__ID>5</label>&nbsp;&nbsp;
                           <input type="radio" class="modified_radio__ID" name="afib_tx_stroke__ID"  value=4 \><label class=modified_number__ID>4</label>&nbsp;&nbsp;
@@ -486,7 +485,7 @@
                       </td>
                   </tr>
                   <tr>
-                    <td  class="w3-left-align">Recurrent AFib after Cardioversion</td>
+                    <td  class="w3-left-align">FA recurrente después de la cardioversión</td>
                     <td>
                           <input type="radio" class="modified_radio__ID" id="afib_tx_cardioversion__ID" name="afib_tx_cardioversion__ID"  value=5 \><label class=modified_number__ID>5</label>&nbsp;&nbsp;
                           <input type="radio" class="modified_radio__ID" name="afib_tx_cardioversion__ID"  value=4 \><label class=modified_number__ID>4</label>&nbsp;&nbsp;
@@ -510,7 +509,7 @@
                       </td>
                   </tr>
                   <tr>
-                    <td  class="w3-left-align">Recurrent AFib after Ablation</td>
+                    <td  class="w3-left-align">FA recurrente después de ablación</td>
                     <td>
                           <input type="radio" class="modified_radio__ID" id="afib_tx_ablation__ID" name="afib_tx_ablation__ID"  value=5 \><label class=modified_number__ID>5</label>&nbsp;&nbsp;
                           <input type="radio" class="modified_radio__ID" name="afib_tx_ablation__ID"  value=4 \><label class=modified_number__ID>4</label>&nbsp;&nbsp;
@@ -534,7 +533,7 @@
                       </td>
                   </tr>
                   <tr>
-                    <td  class="w3-left-align">Heart Failure</td>
+                    <td  class="w3-left-align">Insuficiencia cardíaca</td>
                     <td>
                           <input type="radio" class="modified_radio__ID" id="afib_tx_hf__ID" name="afib_tx_hf__ID"  value=5 \><label class=modified_number__ID>5</label>&nbsp;&nbsp;
                           <input type="radio" class="modified_radio__ID" name="afib_tx_hf__ID"  value=4 \><label class=modified_number__ID>4</label>&nbsp;&nbsp;
@@ -558,7 +557,7 @@
                       </td>
                   </tr>
                   <tr>
-                    <td  class="w3-left-align">AFib Hospitalisation</td>
+                    <td  class="w3-left-align">Hospitalización por FA</td>
                     <td>
                           <input type="radio" class="modified_radio__ID" id="afib_tx_hospitalisation__ID" name="afib_tx_hospitalisation__ID"  value=5 \><label class=modified_number__ID>5</label>&nbsp;&nbsp;
                           <input type="radio" class="modified_radio__ID" name="afib_tx_hospitalisation__ID"  value=4 \><label class=modified_number__ID>4</label>&nbsp;&nbsp;
@@ -582,7 +581,7 @@
                       </td>
                   </tr>
                   <tr>
-                    <td  class="w3-left-align">Symptoms of AFib</td>
+                    <td  class="w3-left-align">Síntomas de FA</td>
                     <td>
                           <input type="radio" class="modified_radio__ID" id="afib_tx_sx__ID" name="afib_tx_sx__ID"  value=5 \><label class=modified_number__ID>5</label>&nbsp;&nbsp;
                           <input type="radio" class="modified_radio__ID" name="afib_tx_sx__ID"  value=4 \><label class=modified_number__ID>4</label>&nbsp;&nbsp;
@@ -606,7 +605,7 @@
                       </td>
                   </tr>
                   <tr>
-                    <td  class="w3-left-align">Poor Quality of Life</td>
+                    <td  class="w3-left-align">Mala calidad de vida</td>
                     <td>
                           <input type="radio" class="modified_radio__ID" id="afib_tx_qol__ID" name="afib_tx_qol__ID"  value=5 \><label class=modified_number__ID>5</label>&nbsp;&nbsp;
                           <input type="radio" class="modified_radio__ID" name="afib_tx_qol__ID"  value=4 \><label class=modified_number__ID>4</label>&nbsp;&nbsp;
@@ -632,13 +631,13 @@
                 </table>
               </div>
             <div class="w3-container w3-content-2 w3-row w3-padding-12 " style="background-color:#A7B3A5 ">
-                <br>13-	We value any additional comments about the role of OSA therapy in the management of AFib and the key clinical questions that need to be answered in this area. If you do have any comments then please make them in the space below:
+                <br>13-	Valoramos cualquier comentario adicional sobre el papel del tratamiento del AOS en el manejo de la FA y las preguntas clínicas clave que deberían ser respondidas en esta área. Si tiene algún comentario, hágalo en el espacio siguiente:
                 <div  class=" w3-container w3-padding-8">
                     <textarea id=comments__ID name=comments__ID style="width:100%;height:200px"></textarea>
                 </div>
             </div>
             <div class="w3-container w3-content-2 w3-row w3-padding-12 " style="background-color:#B4D8C0 ">
-                <br>If you wish to be contacted about participating in future multi-centre research please leave your email address here:
+                <br>Si desea que lo contactemos para participar en un proyecto multicéntrico de investigación futuro, deje su dirección de correo electrónico aquí:
                 <div  class=" w3-container w3-padding-8">
                     <input id=email__ID name=email__ID type=text placeholder="Email" class=C__ID__input />
                 </div>
@@ -656,7 +655,7 @@
     </form>
 </section>
 <script>
-    function F__ID(){
+/*    function F__ID(){
         //-------------------------------------
         VmInclude:__COMPONENT__/module/form.v1.js
         m.add_anonymous=1;
@@ -924,6 +923,7 @@
         }
         //****************************************************
     }
+    */
 </script>
 
 <link rel="stylesheet" href="css/w3.css">
