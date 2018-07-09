@@ -274,7 +274,7 @@ $vm.app_init(function(){
             $('body').css("background", "url("+$(this).attr("src")+") no-repeat bottom center"); $('body').css("background-size", "cover");
             console.log((new Date().getTime()-$vm.start_time).toString()+"---"+"********************* background image is ready ************************");
         }));
-        //$image1.attr("src", "layout.jpg");
+        $image1.attr("src", "layout.jpg");
     }
     //------------------------------------
     var module_links=function(){

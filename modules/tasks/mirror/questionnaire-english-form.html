@@ -284,7 +284,7 @@
                     8-	Does the proportion of patients who end up using CPAP treatment influence your decision to refer patients to OSA diagnostic/treatment services?
                     <br><input class="w3-radio" type="radio" name="accept_cpap_inluence_referral__ID" id=accept_cpap_inluence_referral_1__ID value="Yes" \>
                     <label  for=accept_cpap_inluence_referral_1__ID>Yes</label>
-                    &nbsp;&nbsp;<input  class="w3-radio"  type="radio" name="accept_cpap_inluence_referral__ID" id=accept_cpap_inluence_referral_2__ID value="Noy" \>
+                    &nbsp;&nbsp;<input  class="w3-radio"  type="radio" name="accept_cpap_inluence_referral__ID" id=accept_cpap_inluence_referral_2__ID value="No" \>
                     <label  for=accept_cpap_inluence_referral_2__ID>No</label>
                     &nbsp;&nbsp;<input  class="w3-radio"  type="radio" name="accept_cpap_inluence_referral__ID" id=accept_cpap_inluence_referral_5__ID value="I am unsure" \>
                     <label  for=accept_cpap_inluence_referral_5__ID>I am unsure</label>
@@ -317,7 +317,7 @@
             </div>
             <br>
             <div class="w3-container w3-content-2 w3-row w3-padding-12 " style="background-color:#A7B3A5 ">
-                <br>10-	<b>Rating the need for further research:</b><br>
+                <br>10-	Rating the need for further research:<br>
                 Please rate overall how important you perceive the need is for further clinical research to establish the benefit of treating moderate-severe OSA with CPAP for:
                 <br><br>
                 <table class="w3-centered w3-table-all w3-hoverable  w3-margin-bottom">
@@ -451,16 +451,16 @@
 
                     12- Which treatment option is best for <b><u>reducing the risk</u></b> of each of the following outcomes in patients with AFib and moderate-severe OSA?
                 <table class="w3-centered w3-table-all w3-hoverable  w3-margin-bottom">
-                  <tr class="w3-border">
-                    <td  class="w3-left-align">Outcome</td>
-                    <td><b>AFib treatment<br>alone</b> is<br>preferable<br>
-                    <span class="w3-small"> 5=very certain, 1=not very certain</span></td>
-                  </td>
+                    <tr class="w3-border">
+                      <td  class="w3-left-align">Outcome</td>
+                      <td><b>AFib treatment<br>alone</b> is<br>preferable<br>
+                          <span class="w3-small"> 5=very certain, 1=not very certain</span></td>
+                    </td>
                     <td>Undecided</td>
-                    <td><b>CPAP + AFib<br>treatment</b> is<br>preferable<br>
-                    <span class="w3-small"> 5=very certain, 1=not very certain</span></td>
-                    <td>RCT Participation<br>Yes&nbsp;&nbsp;&nbsp;&nbsp;No</td>
-                  </tr>
+                      <td><b>CPAP+AFib<br>treatment</b> is<br>preferable<br>
+                          <span class="w3-small"> 5=very certain, 1=not very certain</span></td>
+                          <td style="font-size:0.8em">RCT Participation<br>Yes&nbsp;&nbsp;&nbsp;&nbsp;No</td>
+                    </tr>
                   <tr>
                     <td  class="w3-left-align">Stroke</td>
                     <td>
@@ -656,7 +656,7 @@
     </form>
 </section>
 <script>
-    function F__ID(){
+    function F__ID(){/*
         //-------------------------------------
         VmInclude:__COMPONENT__/module/form.v1.js
         m.add_anonymous=1;
@@ -913,16 +913,19 @@
                 $vm.load_module_v2('thanks',$vm.root_layout_content_slot,{});
             }});
         })
-        //****************************************************
+        */
+        //-------------------------------------------------------
         /*
         Hi Gunnar:
         if we use form native validation and serialize then we need to change submit button type from 'button' to 'submit', and also to set proper names for each field
         the new format uses json data, so we should modify the old records so as to change from xml to json.
         */
+        /*
         m.after_add=function(record,dbv,res){
             $vm.load_module_v2('thanks',$vm.root_layout_content_slot,{});
         }
-        //****************************************************
+        */
+        //-----------------------------------------
     }
 </script>
 

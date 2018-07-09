@@ -1,16 +1,49 @@
 <div id=D__ID>
-   <div id=page__ID>
+   <div class="jumbotron-fluid home">
+     <div class="container"><br><br>
+       <div class="row">
+         <div class="col-lg-6 col-md-12 col-sm-12 order-lg-2" style="background:rgb(255,255,255,0.5)">
+           <h1>INCOSACT</h1>
+           <p>This questionnaire from the INCOSACT group is designed to give information about the patients you manage for Atrial Fibrillation (AFib). Completion of the survey is voluntary and anonymous. </p>
+           <button type="button" id="btn1__ID" class="btn btn-primary btn-lg">English version&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button><br><br>
+           <button type="button" id="btn2__ID" class="btn btn-primary btn-lg">Portuguese version</button><br><br>
+           <button type="button" id="btn3__ID" class="btn btn-primary btn-lg">Spanish version&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button><br><br>
+           <button type="button" id="btn4__ID" class="btn btn-primary btn-lg">Turkish version&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button><br><br>
+         </div>
+       </div>
+     </div>
    </div>
    <script>
       function F__ID(){
-          $('#D__ID').on('load',function(){
-              if($vm.module_list["questionnaire"]!=undefined) $vm.load_module_v2("questionnaire",'',{});
-          })
-          $vm.home_process=function(){
-              $vm.load_module_v2("questionnaire_eng",'',{});
-          }
+         //-------------------------------------
+         var this_module=$vm.module_list[$vm.vm['__ID'].name];
+         var prefix=this_module.prefix; if(prefix==undefined) prefix="";
+         //-------------------------------------
+         $('#btn1__ID').on('click',function(){
+             $vm.load_module_v2("questionnaire-english-form",'',{});
+         })
+         //-------------------------------------
+         $('#btn2__ID').on('click',function(){
+             $vm.load_module_v2("questionnaire-portuguese-form",'',{});
+         })
+         //-------------------------------------
+         $('#btn3__ID').on('click',function(){
+             $vm.load_module_v2("questionnaire-spanish-form",'',{});
+         })
+         //-------------------------------------
+         $('#btn4__ID').on('click',function(){
+             $vm.load_module_v2("questionnaire-turkish-form",'',{});
+         })
+         //-------------------------------------
+         $('#D__ID').css('min-height',$vm.min_height);
+         //-------------------------------------
       }
    </script>
    <style>
+      #D__ID{
+         height:100%;
+         animation: vm_module_fadein 1.0s;
+         overflow: auto;
+      }
    </style>
 </div>

@@ -1,9 +1,14 @@
 {
     "modules":
 	{
-        "questionnaire_eng":    {"table_id":"20009290","url":"modules/questionnaire_eng.html"},
-        "questionnaire_port":    {"table_id":"20009290","url":"modules/questionnaire_port.html"},
-        "questionnaire_spa":    {"table_id":"20009290","url":"modules/questionnaire_spa.html"},
-        "thanks":           {                      "url":"modules/thanks.html"}
+        "questionnaire-english-form":           {"table_id":"20009290","url":"modules/tasks/mirror/questionnaire-english-form.html"},
+        "questionnaire-spanish-form":           {"table_id":"20009290","url":"modules/tasks/mirror/questionnaire-spanish-form.html"},
+        "questionnaire-portuguese-form":        {"table_id":"20009290","url":"modules/tasks/mirror/questionnaire-portuguese-form.html"},
+        "questionnaire-turkish-form":           {"table_id":"20009290","url":"modules/tasks/mirror/questionnaire-turkish-form.html"},
+
+        "thanks-english-form":           {"table_id":"20009290","url":"modules/tasks/thanks-english-form.html"},
+        "thanks-spanish-form":           {"table_id":"20009290","url":"modules/tasks/thanks-spanish-form.html"},
+        "thanks-portuguese-form":        {"table_id":"20009290","url":"modules/tasks/thanks-portuguese-form.html"},
+        "thanks-turkish-form":           {"table_id":"20009290","url":"modules/tasks/thanks-turkish-form.html"}
 	}
 }
