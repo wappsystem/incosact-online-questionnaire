@@ -9,5 +9,6 @@ xcopy %S%\thanks-english-form.html %D%\thanks-english-form.html /D /Y
 xcopy %S%\thanks-portuguese-form.html %D%\thanks-portuguese-form.html /D /Y
 xcopy %S%\thanks-spanish-form.html %D%\thanks-spanish-form.html /D /Y
 xcopy %S%\thanks-turkish-form.html %D%\thanks-turkish-form.html /D /Y
+xcopy %S%\task-form.css %D%\task-form.css /D /Y
 
 pause

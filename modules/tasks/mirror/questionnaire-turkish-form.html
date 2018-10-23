@@ -264,17 +264,17 @@
                                     <div class="row">
                                         <div class="col-8"><label ><b>Tam</b>bir uyku incelemesine tabi tutulmuştur?<br><small><i>Bu çalışma, EEG (uyku), 2-lead ECG, solunum ve oksimetre ölçümleri ile bütün geceboyunca yapılan uyku incelemesidir.</i></small></label></div>
                                         <div class="col-4"><select class="custom-select" name="full_sleep_study" id=full_sleep_study__ID >
-                                            <option value='' >...</option><option value='0' >0%</option><option value='10' >10%</option><option value='20' >20%</option><option value='30' >30%</option><option value='40' >40%</option><option value='50' >50%</option><option value='60' >60%</option><option value='70' >70%</option><option value='80' >80%</option><option value='90'>90%</option><option value='100' >100%</option>
+                                            <option value='' >...</option><option value='-1' >Emin değilim</option><option value='0' >0%</option><option value='10' >10%</option><option value='20' >20%</option><option value='30' >30%</option><option value='40' >40%</option><option value='50' >50%</option><option value='60' >60%</option><option value='70' >70%</option><option value='80' >80%</option><option value='90'>90%</option><option value='100' >100%</option>
                                               </select>
                                           </div>
                                       </div>
-                                      <div class=row>
+<!--                                      <div class=row>
                                           <div class="col-8"><label class=""><b>Sınırlı</b> uyku incelemesine tabi tutulmuştur?<br><small><i>Bu çalışma, EEG (uyku), 2-lead ECG, solunum ve oksimetre ölçümleri ile bütün geceboyunca yapılan uyku incelemesidir.</i></small></label></div>
                                           <div class="col-4"><select class="custom-select" name="limited_sleep_study" id=limited_sleep_study__ID >
                                               <option value='' >...</option><option value='0' >0%</option><option value='10' >10%</option><option value='20' >20%</option><option value='30' >30%</option><option value='40' >40%</option><option value='50' >50%</option><option value='60' >60%</option><option value='70' >70%</option><option value='80' >80%</option><option value='90'>90%</option><option value='100' >100%</option>
                                                 </select>
                                           </div>
-                                    </div>
+                                    </div>-->
                                 </fieldset>
                            </div>
                         </div>
@@ -1543,7 +1543,12 @@
         m.add_anonymous=1;
         //-------------------------------------
         m.load=function(){
+            m.input=$vm.vm['__ID'].input; if(m.input==undefined) m.input={};
             $('#F__ID')[0].reset();
+            $('#submit__ID').show();
+            var grid_record=m.input.record;
+            $('#delete__ID').hide(); if(grid_record!=undefined && grid_record.ID!==undefined) $('#delete__ID').show();
+            $vm.deserialize(grid_record,'#F__ID');
             custom_field_process();
         }
         //----------------------------------
@@ -1552,37 +1557,37 @@
                 if($('select[name=sleep_referral]').val()==='0' || $('select[name=sleep_referral]').val()===''){
                     $('#q6').hide();
                     $('select[name=full_sleep_study]').prop('required',false);
-                    $('select[name=limited_sleep_study]').prop('required',false);
+                    //$('select[name=limited_sleep_study]').prop('required',false);
                     $('#q7').hide();
-                    $('select[name=dx_osa_proportion__ID]').prop('required',false);
-                    $('select[name=rec_tx_osa_proportion__ID]').prop('required',false);
-                    $('select[name=tx_osa_proportion__ID]').prop('required',false);
+                    $('select[name=dx_osa_proportion]').prop('required',false);
+                    $('select[name=rec_tx_osa_proportion]').prop('required',false);
+                    $('select[name=tx_osa_proportion]').prop('required',false);
                     $('#q8').hide();
-                    $('input:radio[name=accept_cpap_inluence_referral__ID]').prop('required',false);
+                    $('input:radio[name=accept_cpap_inluence_referral]').prop('required',false);
                     $('#q9').hide();
-                    $('select[name=prior_sleep_referral__ID]').prop('required',false);
-                    $('select[name=after_sleep_referral__ID]').prop('required',false);
+                    $('select[name=prior_sleep_referral]').prop('required',false);
+                    $('select[name=after_sleep_referral]').prop('required',false);
                 }
                 else{
                     $('#q6').show();
                     $('select[name=full_sleep_study]').prop('required',true);
-                    $('select[name=limited_sleep_study]').prop('required',true);
+                    //$('select[name=limited_sleep_study]').prop('required',true);
                     $('#q7').show();
-                    $('select[name=dx_osa_proportion__ID]').prop('required',true);
-                    $('select[name=rec_tx_osa_proportion__ID]').prop('required',true);
-                    $('select[name=tx_osa_proportion__ID]').prop('required',true);
+                    $('select[name=dx_osa_proportion]').prop('required',true);
+                    $('select[name=rec_tx_osa_proportion]').prop('required',true);
+                    $('select[name=tx_osa_proportion]').prop('required',true);
                     $('#q8').show();
-                    $('input:radio[name=accept_cpap_inluence_referral__ID]').prop('required',true);
+                    $('input:radio[name=accept_cpap_inluence_referral]').prop('required',true);
                     $('#q9').show();
-                    $('select[name=prior_sleep_referral__ID]').prop('required',true);
-                    $('select[name=after_sleep_referral__ID]').prop('required',true);
+                    $('select[name=prior_sleep_referral]').prop('required',true);
+                    $('select[name=after_sleep_referral]').prop('required',true);
                 }
             });
-            $('select[name=full_sleep_study]').on('change', function(){
+/*            $('select[name=full_sleep_study]').on('change', function(){
                 if($('select[name=sleep_referral]').val()!=='0'){
                     if($('select[name=limited_sleep_study]').val()!==''){
                         if(parseInt($('select[name=full_sleep_study]').val()) + parseInt($('select[name=limited_sleep_study]').val())!=100 ) {
-                            $vm.alert("Soru 6. Her iki cevap toplamda %100 olmalı");
+                            $vm.alert("Question 6. Both answers must total 100%");
                         }
                     }
                 }
@@ -1591,16 +1596,17 @@
                 if($('select[name=sleep_referral]').val()!=='0'){
                     if($('select[name=full_sleep_study]').val()!==''){
                         if(parseInt($('select[name=full_sleep_study]').val()) + parseInt($('select[name=limited_sleep_study]').val())!=100 ) {
-                            $vm.alert("Soru 6. Her iki cevap toplamda %100 olmalı");
+                            $vm.alert("Question 6. Both answers must total 100%");
                         }
                     }
                 }
             });
+*/
             $('select[name=after_sleep_referral]').on('change', function(){
                 if($('select[name=sleep_referral]').val()!=='0'){
                     if($('select[name=prior_sleep_referral]').val()!==''){
                         if(parseInt($('select[name=prior_sleep_referral]').val()) + parseInt($('select[name=after_sleep_referral]').val())>100 ) {
-                            $vm.alert("Soru 9. Her iki cevap da toplamda %100 veya daha az olmalı");
+                            $vm.alert("Question 9. Both answers must total 100% or less");
                         }
                     }
                 }
@@ -1609,7 +1615,7 @@
                 if($('select[name=sleep_referral]').val()!=='0'){
                     if($('select[name=after_sleep_referral]').val()!==''){
                         if(parseInt($('select[name=after_sleep_referral]').val()) + parseInt($('select[name=prior_sleep_referral]').val())>100 ) {
-                            $vm.alert("Soru 9. Her iki cevap da toplamda %100 veya daha az olmalı");
+                            $vm.alert("Question 9. Both answers must total 100% or less");
                         }
                     }
                 }
@@ -1619,18 +1625,18 @@
         //----------------------------------
         m.before_submit=function(){
             if($('select[name=sleep_referral]').val()!=='0'){
-                if(parseInt($('select[name=full_sleep_study]').val()) + parseInt($('select[name=limited_sleep_study]').val())!=100 ) {
-                    $vm.alert("Soru 6. Her iki cevap toplamda %100 olmalı"); return false;
-                }
+/*                if(parseInt($('select[name=full_sleep_study]').val()) + parseInt($('select[name=limited_sleep_study]').val())!=100 ) {
+                    $vm.alert("Question 6. Both answers must total 100%"); return false;
+                }*/
                 if(parseInt($('select[name=prior_sleep_referral]').val()) + parseInt($('select[name=after_sleep_referral]').val())>100 ) {
-                    $vm.alert("Soru 9. Her iki cevap da toplamda %100 veya daha az olmalı");	return false;
+                    $vm.alert("Question 9. Both answers must total 100% or less");	return false;
                 }
             }
             return true;
         }
         //-------------------------------------
         m.after_add=function(record,dbv,res){
-            $vm.load_module_v2('thanks-turkish-form',$vm.root_layout_content_slot,{});
+            $vm.load_module_v2('thanks-english-form',$vm.root_layout_content_slot,{});
         }
         //-----------------------------------------
     }
