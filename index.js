@@ -9,7 +9,7 @@ $vm.module_list={
 $vm.app_config={
     "api_path_development":"https://cbs.wappsystem.com/dev/",
     "api_path_production":"https://cbs.wappsystem.com/pro/",
-    "default_production":"No",
+    "default_production":"Yes",
 }
 //------------------------------------
 $vm.qid='20011575';
@@ -42,7 +42,8 @@ $vm.app_init=function(callback){
     }
     $vm.version=$vm.ver[0];
     //--------------------------------------------------------
-    $vm.parts_path="https://vmiis.github.io/component";
+    //$vm.parts_path="https://vmiis.github.io/component";
+    $vm.parts_path="https://component.vmiis.com";
     if(window.location.hostname=='127.0.0.1' || window.location.hostname=='localhost'){
         $vm.library_path =window.location.protocol+'//'+window.location.host;
     }
