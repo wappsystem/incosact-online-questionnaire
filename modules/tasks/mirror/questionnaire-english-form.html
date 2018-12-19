@@ -17,7 +17,7 @@
                             “Understanding Atrial Fibrillation (AFib) and Obstructive Sleep Apnea (OSA) Survey” </h4>
                             <h6 class="">
                                 <i>This questionnaire from the INCOSACT group is designed to give information about the patients you manage for Atrial Fibrillation (AFib). Completion of the survey is voluntary and anonymous.
-                                <br><br><mark>For each question, you will need to check the option button<label class="radiobuttons" ><input type="radio" name="xxx" value="0" disabled><span style="margin-top:-8px;margin-left:5px" class="checkmark"></span></label>
+                                <br><br>For each question, you will need to check the option button<label class="radiobuttons" ><input type="radio" name="xxx" value="0" disabled><span style="margin-top:-8px;margin-left:5px" class="checkmark"></span></label>
                                 by clicking on it or alternatively select your choice from the range of options available in the drop down list&nbsp;&nbsp;
                                 <select  style='width:100px;height:25px;vertical-align:middle;'>
                                    <option value='' >...</option>
@@ -25,7 +25,7 @@
                                    <option value='2' >B</option>
                                    <option value='3' >C</option>
                                 </select>
-                                <br>If you are unsure about an answer please select the </mark> </i><label class="radiobuttons" ><input type="radio" name="xxy" value="0" disabled ><span style="margin-left:5px" class="checkmark"></span>I'm unsure</label> <i><mark> option button. </mark><br>Alternatively please select “Unsure” from any drop down list&nbsp;&nbsp;
+                                <br>If you are unsure about an answer please select the  </i><label class="radiobuttons" ><input type="radio" name="xxy" value="0" disabled ><span style="margin-left:5px" class="checkmark"></span>I'm unsure</label> <i> option button. <br>Alternatively please select “Unsure” from any drop down list&nbsp;&nbsp;
                                 <select disabled style='width:120px;height:25px;vertical-align:middle;'>
                                     <option value='' >...</option>
                                     <option value='3' selected>Unsure</option>
@@ -455,7 +455,7 @@
                                 </fieldset>
                             </div>
                             <div class="form-group">
-                                <h6><mark>
+                                <h6>
                                     For patients with AFib and moderate-severe OSA, we are interested in your current level of certainty about which of the following treatment options is better for reducing the risk of a number of patient outcomes.
                                     <br><br>
                                     For the treatment option you choose, please select the number (regardless of your reason), that corresponds with the strength of your certainty that the treatment is superior (5=very certain, 1=not very certain). If you are completely undecided between the two treatment options, please tick the 0=Undecided option in the middle.
@@ -469,7 +469,7 @@
                                     <br>
                                     In the following example, Treatment B is considered best for the Outcome example. The strength of certainty that Treatment B is the best is 3 which lies in the middle between 1 (Not Very Certain) and 5 (Very Certain).
                                     <br>
-                                    The RCT participation = Y indicates the respondent would be willing to participate in an RCT.</mark>
+                                    The RCT participation = Y indicates the respondent would be willing to participate in an RCT.
                                 </h6>
                             </div>
                             <div class="form-group">
@@ -1630,7 +1630,8 @@
         }
 
         //----------------------------------
-        m.before_submit=function(){
+        m.before_submit=function(record,dbv){
+            record.language="1"
             if($('select[name=sleep_referral]').val()!=='0'){
 /*                if(parseInt($('select[name=full_sleep_study]').val()) + parseInt($('select[name=limited_sleep_study]').val())!=100 ) {
                     $vm.alert("Question 6. Both answers must total 100%"); return false;
