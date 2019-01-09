@@ -5,10 +5,12 @@
         "questionnaire-spanish-form":           {"table_id":"20009290","url":"modules/tasks/mirror/questionnaire-spanish-form.html"},
         "questionnaire-portuguese-form":        {"table_id":"20009290","url":"modules/tasks/mirror/questionnaire-portuguese-form.html"},
         "questionnaire-turkish-form":           {"table_id":"20009290","url":"modules/tasks/mirror/questionnaire-turkish-form.html"},
+        "questionnaire-japanese-form":          {"table_id":"20009290","url":"modules/tasks/mirror/questionnaire-japanese-form.html"},
 
         "thanks-english-form":           {"table_id":"","url":"modules/tasks/mirror/thanks-english-form.html"},
         "thanks-spanish-form":           {"table_id":"","url":"modules/tasks/mirror/thanks-spanish-form.html"},
         "thanks-portuguese-form":        {"table_id":"","url":"modules/tasks/mirror/thanks-portuguese-form.html"},
-        "thanks-turkish-form":           {"table_id":"","url":"modules/tasks/mirror/thanks-turkish-form.html"}
+        "thanks-turkish-form":           {"table_id":"","url":"modules/tasks/mirror/thanks-turkish-form.html"},
+        "thanks-japanese-form":          {"table_id":"","url":"modules/tasks/mirror/thanks-japanese-form.html"}
 	}
 }

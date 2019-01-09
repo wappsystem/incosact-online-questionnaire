@@ -1,18 +1,26 @@
 <div id=D__ID>
-   <div class="jumbotron-fluid home">
-     <div class="container"><br><br>
-       <div class="row">
-         <div class="col-lg-6 col-md-12 col-sm-12 order-lg-2" style="background-color:rgba(245, 245, 245, 0.7)">
-           <h1>INCOSACT</h1>
-           <p>This questionnaire from the INCOSACT group is designed to give information about the patients you manage for Atrial Fibrillation (AFib). Completion of the survey is voluntary and anonymous. </p>
-           <button type="button" id="btn1__ID" class="btn btn-secondary btn-lg">English version&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button><br><br>
-           <button type="button" id="btn2__ID" class="btn btn-secondary btn-lg">Portuguese version</button><br><br>
-           <button type="button" id="btn3__ID" class="btn btn-secondary btn-lg">Spanish version&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button><br><br>
-           <button type="button" id="btn4__ID" class="btn btn-secondary btn-lg">Turkish version&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button><br><br>
+    <div class="container mt-95 mb-3">
+      <div class="row" >
+
+        <!-- form container start -->
+
+        <div class="col-12 col-lg-7 col-md-11 col-sm-12 mx-auto formbox">
+          <div class="row">
+            <div class="col-12">
+                        <div class="p-4 bg-light rounded" >
+                            <h2 class="text-danger text-center bg-light">INCOSACT</h2>
+                            <h3 class="bg-light">Atrial Fibrillation Sleep Apnea International Survey</h3>
+           <button type="button" id="btn1__ID" class="btn btn-secondary btn-lg">English survey&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button><br><br>
+           <button type="button" id="btn2__ID" class="btn btn-secondary btn-lg">Portuguese survey</button><br><br>
+           <button type="button" id="btn3__ID" class="btn btn-secondary btn-lg">Spanish survey&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button><br><br>
+           <button type="button" id="btn4__ID" class="btn btn-secondary btn-lg">Turkish survey&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button><br><br>
+           <button type="button" id="btn5__ID" class="btn btn-secondary btn-lg">Japanese survey&nbsp;&nbsp;&nbsp;</button><br><br>
          </div>
-       </div>
-     </div>
-   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
    <script>
       function F__ID(){
          //-------------------------------------
@@ -35,6 +43,10 @@
              $vm.load_module_v2("questionnaire-turkish-form",'',{});
          })
          //-------------------------------------
+         $('#btn5__ID').on('click',function(){
+             $vm.load_module_v2("questionnaire-japanese-form",'',{});
+         })
+         //-------------------------------------
          $('#D__ID').css('min-height',$vm.min_height);
          //-------------------------------------
       }
@@ -46,4 +58,6 @@
          overflow: auto;
       }
    </style>
+   VmInclude:__CURRENT_PATH__/tasks/mirror/task-form.css
+
 </div>
