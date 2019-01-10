@@ -1631,7 +1631,7 @@
 
         //----------------------------------
         m.before_submit=function(record,dbv){
-            record.language="1"
+            record.language="5"
             if($('select[name=sleep_referral]').val()!=='0'){
 /*                if(parseInt($('select[name=full_sleep_study]').val()) + parseInt($('select[name=limited_sleep_study]').val())!=100 ) {
                     $vm.alert("Question 6. Both answers must total 100%"); return false;
@@ -1644,7 +1644,7 @@
         }
         //-------------------------------------
         m.after_add=function(record,dbv,res){
-            $vm.load_module_v2('thanks-english-form',$vm.root_layout_content_slot,{});
+            $vm.load_module_v2('thanks-japanese-form',$vm.root_layout_content_slot,{});
         }
         //-----------------------------------------
     }
