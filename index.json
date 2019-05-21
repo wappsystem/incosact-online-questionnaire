@@ -8,6 +8,7 @@
         "questionnaire-japanese-form":          {"table_id":"20009290","url":"modules/tasks/mirror/questionnaire-japanese-form.html"},
         "questionnaire-canadian-french-form":   {"table_id":"20009290","url":"modules/tasks/mirror/questionnaire-canadian-french-form.html"},
         "questionnaire-french-form":            {"table_id":"20009290","url":"modules/tasks/mirror/questionnaire-french-form.html"},
+        "questionnaire-german-form":            {"table_id":"20009290","url":"modules/tasks/mirror/questionnaire-german-form.html"},
 
         "thanks-english-form":           {"table_id":"","url":"modules/tasks/mirror/thanks-english-form.html"},
         "thanks-spanish-form":           {"table_id":"","url":"modules/tasks/mirror/thanks-spanish-form.html"},
@@ -15,6 +16,7 @@
         "thanks-turkish-form":           {"table_id":"","url":"modules/tasks/mirror/thanks-turkish-form.html"},
         "thanks-japanese-form":          {"table_id":"","url":"modules/tasks/mirror/thanks-japanese-form.html"},
         "thanks-canadian-french-form":          {"table_id":"","url":"modules/tasks/mirror/thanks-canadian-french-form.html"},
-        "thanks-french-form":          {"table_id":"","url":"modules/tasks/mirror/thanks-french-form.html"}
+        "thanks-french-form":          {"table_id":"","url":"modules/tasks/mirror/thanks-french-form.html"},
+        "thanks-german-form":          {"table_id":"","url":"modules/tasks/mirror/thanks-german-form.html"}
 	}
 }

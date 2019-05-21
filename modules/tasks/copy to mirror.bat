@@ -8,6 +8,7 @@ xcopy %S%\questionnaire-turkish-form.html %D%\questionnaire-turkish-form.html /D
 xcopy %S%\questionnaire-japanese-form.html %D%\questionnaire-japanese-form.html /D /Y
 xcopy %S%\questionnaire-canadian-french-form.html %D%\questionnaire-canadian-french-form.html /D /Y
 xcopy %S%\questionnaire-french-form.html %D%\questionnaire-french-form.html /D /Y
+xcopy %S%\questionnaire-german-form.html %D%\questionnaire-german-form.html /D /Y
 xcopy %S%\thanks-english-form.html %D%\thanks-english-form.html /D /Y
 xcopy %S%\thanks-portuguese-form.html %D%\thanks-portuguese-form.html /D /Y
 xcopy %S%\thanks-spanish-form.html %D%\thanks-spanish-form.html /D /Y
@@ -15,6 +16,7 @@ xcopy %S%\thanks-turkish-form.html %D%\thanks-turkish-form.html /D /Y
 xcopy %S%\thanks-japanese-form.html %D%\thanks-japanese-form.html /D /Y
 xcopy %S%\thanks-canadian-french-form.html %D%\thanks-canadian-french-form.html /D /Y
 xcopy %S%\thanks-french-form.html %D%\thanks-french-form.html /D /Y
+xcopy %S%\thanks-german-form.html %D%\thanks-german-form.html /D /Y
 xcopy %S%\task-form.css %D%\task-form.css /D /Y
 
 pause
